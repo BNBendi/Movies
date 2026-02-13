@@ -7,7 +7,7 @@ function App() {
     <div>
       <iframe
         src="https://www.vidking.net/embed/movie/240"
-        width="100%"
+        width="50%"
         height="600"
         allowFullScreen
       />
