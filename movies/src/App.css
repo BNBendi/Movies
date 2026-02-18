@@ -1,18 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Georgia', serif;
+
+
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .hero-header {
-  height: 30vh; /* Only top 30% */
-  min-height: 250px; /* Prevent too small on mobile */
-  background: url("https://image.tmdb.org/t/p/original/kVUfN0ZMuoSAc1FturM7P7PYel6.jpg") no-repeat center center/cover;
+  height: 60vh;
+  /* Only top 30% */
+  min-height: 250px;
+  /* Prevent too small on mobile */
+  background: url("https://image.tmdb.org/t/p/original/kVUfN0ZMuoSAc1FturM7P7PYel6.jpg") no-repeat 50% 30% / cover;
+
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 100;
 }
 
 .overlay {
@@ -36,19 +50,30 @@
 .watch-btn {
   padding: 10px 30px;
   font-size: 1rem;
-  background-color: #b22222;
+  background-color: transparent;
   color: white;
-  border: none;
+  border: 2px solid #468faf;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 15px;
   transition: 0.3s ease;
 }
 
 .watch-btn:hover {
-  background-color: #8b0000;
-  transform: scale(1.05);
+  background-color: #468faf;
+
 }
 
 .content {
   padding: 40px;
+}
+
+.video-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }

@@ -1,18 +1,17 @@
 import { useState } from 'react'
 import './App.css'
-import Player from "./Player"
+
 
 function App() {
   return (
-    <div>
+    <div className="video-container">
       <iframe
-        src="https://www.vidking.net/embed/movie/240"
-        width="50%"
-        height="600"
+        src="https://www.vidking.net/embed/movie/238"
         allowFullScreen
       />
     </div>
   )
 }
+
 
 export default App
