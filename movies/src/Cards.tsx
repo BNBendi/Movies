@@ -45,11 +45,31 @@ function App() {
             title: "Taxi Driver",
             img: "https://image.tmdb.org/t/p/original/rfvQPCQZaj9nKcmo7852BY3T4vs.jpg"
         },
+        {
+            id: 920,
+            title: "Cars",
+            img: "https://image.tmdb.org/t/p/original/oloVyeBbkVGbFFaUjR8I7Boo7wA.jpg"
+        },
+        {
+            id: 49013,
+            title: "Cars 2",
+            img: "https://image.tmdb.org/t/p/original/mevAQ3La39DhjqyY6aao1pTkMMR.jpg"
+        },
+        {
+            id: 260514,
+            title: "Cars 3",
+            img: "https://image.tmdb.org/t/p/original/jJ8TnHvWHaVadW5JJjGYsM07j9i.jpg"
+        },
+        {
+            id: 911430,
+            title: "F1",
+            img: "https://image.tmdb.org/t/p/original/vqBmyAj0Xm9LnS1xe1MSlMAJyHq.jpg"
+        },
     ];
 
     return (
         <>
-            <h1 style={{ textAlign: "center", color: "white" }}>My movies</h1>
+            <h1 style={{ textAlign: "center", color: "white" }}>Top movies</h1>
 
             <div className="cards-row">
                 {movies.slice(0,4).map((movie) => (
@@ -62,8 +82,22 @@ function App() {
                     </div>
                 ))}
             </div>
+            <h1 style={{ textAlign: "center", color: "white" }}>Deep movies</h1>
+
             <div className="cards-row">
                 {movies.slice(4,8).map((movie) => (
+                    <div className="movie-card" key={movie.id}>
+                        <img
+                            src={movie.img}
+                            alt={movie.title}
+                            onClick={() => navigate(`/player/${movie.id}`)}
+                        />
+                    </div>
+                ))}
+            </div>
+            <h1 style={{ textAlign: "center", color: "white" }}>Motorsport movies</h1>
+            <div className="cards-row">
+                {movies.slice(8,12).map((movie) => (
                     <div className="movie-card" key={movie.id}>
                         <img
                             src={movie.img}
