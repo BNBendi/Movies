@@ -52,14 +52,14 @@ body {
   font-size: 1rem;
   background-color: transparent;
   color: white;
-  border: 2px solid #468faf;
+  border: 2px solid #294861;
   cursor: pointer;
   border-radius: 15px;
   transition: 0.3s ease;
 }
 
 .watch-btn:hover {
-  background-color: #468faf;
+  background-color: #294861;
 
 }
 
@@ -76,4 +76,110 @@ body {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/*Header*/
+.header {
+  width: 100%;
+  background: linear-gradient(90deg, #0e1c26, #2a454b, #294861);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  color: #e0e0e0;
+}
+
+.signup-btn {
+  background: white;
+  color: #4f46e5;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.signup-btn:hover {
+  background: #f3f3f3;
+  transform: scale(1.05);
+}
+
+
+
+
+
+/*Cards*/
+.cards-row {
+  display: flex;
+  gap: 16px; /* space between cards */
+  justify-content: center; /* center row */
+  flex-wrap: wrap; /* wrap to next line on small screens */
+  padding: 20px;
+}
+
+.movie-card {
+  width: 200px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.movie-card:hover img {
+  transform: scale(1.08);
+}
+
+.cards{
+  padding: 20px;
+}
+
+
+.app{
+  background-color: #0e1c26;
+
 }
