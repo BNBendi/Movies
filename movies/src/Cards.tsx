@@ -69,7 +69,7 @@ function App() {
 
     return (
         <>
-            <h1 style={{ textAlign: "center", color: "white" }}>Top movies</h1>
+            <h1 style={{ textAlign: "center", color: "white" }}>Red movies</h1>
 
             <div className="cards-row">
                 {movies.slice(0,4).map((movie) => (
@@ -82,7 +82,7 @@ function App() {
                     </div>
                 ))}
             </div>
-            <h1 style={{ textAlign: "center", color: "white" }}>Deep movies</h1>
+            <h1 style={{ textAlign: "center", color: "white" }}>Yellow movies</h1>
 
             <div className="cards-row">
                 {movies.slice(4,8).map((movie) => (

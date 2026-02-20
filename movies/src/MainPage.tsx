@@ -1,11 +1,17 @@
 import './App.css'
 import { useNavigate } from 'react-router-dom'
 import Cards from "./Cards"
+import Footer from "./components/Footer"
+  
+
+
+
 
 function App() {
   const navigate = useNavigate()
 
   return (
+    <>
     <div className="app">
       <div className="hero-header">
         <div className="overlay">
@@ -23,6 +29,8 @@ function App() {
       </div>
       
     </div>
+    <Footer/>
+    </>
   )
 }
 

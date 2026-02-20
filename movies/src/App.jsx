@@ -4,6 +4,8 @@ import Main from "./MainPage"
 import Player from "./Player"
 import Header from "./components/Header"
 
+
+
 function App() {
   return (
     <>
@@ -13,6 +15,7 @@ function App() {
         <Route path="/" element={<Main />} />
          <Route path="/player/:id" element={<Player />} />
       </Routes>
+      
     </>
   )
 }
