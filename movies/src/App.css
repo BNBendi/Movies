@@ -256,3 +256,35 @@ body {
   font-size: 13px;
   opacity: 0.6;
 }
+/*Bookfooter btn-book*/
+section {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  gap: 20px;               
+  padding: 20px ;
+  
+}
+
+.btn-book {
+  margin: 10px;
+  width: 200px;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #2c3e50;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #34495e;
+  transform: scale(1.05);
+}
+
+.btn-book:active {
+  transform: scale(0.98);
+}
