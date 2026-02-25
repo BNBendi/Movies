@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 
 const Bookfooter = () => {
@@ -43,7 +44,9 @@ const Bookfooter = () => {
             <button type="button" className='btn-book'>9pm</button>
             <button type="button" className='btn-book'>10pm</button>
         </section>
-        
+
+        <Footer />
+
     </>
   )
 }
