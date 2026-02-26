@@ -20,7 +20,7 @@ function App() {
             className="watch-btn"
             onClick={() => navigate("/player/238")}
           >
-            Watch Now
+            Book Now
           </button>
         </div>
       </div>

@@ -126,7 +126,17 @@ function App() {
             header: "https://image.tmdb.org/t/p/original/pwqdccilWJLcQBxX5PNTACP41iK.jpg",
             trailer: "https://youtu.be/BjkIOU5PhyQ"
         },
+        {
+            id: 238,
+            title: "The Godfather",
+            img: "https://image.tmdb.org/t/p/original/oaIPuKuJM8IdpgWSmNe9bBiyvRY.jpg",
+            lore: "An offer you can't refuse. (also Luca Brasi sleeps with the fishes)",
+            header: "https://image.tmdb.org/t/p/original/4vG2j7IgMvoILP71AmefPM8Ts6f.jpg",
+            trailer: "https://youtu.be/BjkIOU5PhyQ"
+        },
 
+
+        
 
        
 
