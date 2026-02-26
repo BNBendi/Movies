@@ -2,7 +2,7 @@ import './App.css'
 import { useNavigate } from 'react-router-dom'
 import Cards from "./Cards"
 import Footer from "./components/Footer"
-  
+
 
 
 

@@ -20,7 +20,7 @@ function App() {
             lore: "Directed by Alfred Hitchcock in 1954, Rear Window stars James Stewart and Grace Kelly. The entire film was shot on a single elaborate set, and it is considered one of Hitchcock's finest thrillers.",
             header: "https://image.tmdb.org/t/p/original/5bN06p5OwRUEqcfrtNs5egV16yb.jpg",
             trailer: "https://youtu.be/m01YktiEZCw"
-            
+
         },
         {
             id: 539,
@@ -101,7 +101,36 @@ function App() {
             lore: "F1 is a Formula One racing film directed by Joseph Kosinski and starring Brad Pitt. The production has collaborated with Formula One and real F1 teams, filming during actual Grand Prix weekends.",
             header: "https://image.tmdb.org/t/p/original/8PHTO4a11JuZwYko7QPBUWq45wJ.jpg",
             trailer: "https://youtu.be/69ffwl-8pCU"
-        }
+        },
+        {
+            id: 269149,
+            title: "Zootopia",
+            img: "https://image.tmdb.org/t/p/original/nZAnKuEhztoOFi8PSUMPUcFLn2u.jpg",
+            lore: "Zootopia is a 2016 animated film produced by Walt Disney Animation Studios, following rookie officer Judy Hopps and con artist Nick Wilde as they uncover a conspiracy in a city of anthropomorphic animals. Zootopia 2 is the upcoming sequel that continues their partnership with a new mystery in the expanding animal metropolis.",
+            header: "https://image.tmdb.org/t/p/original/9tOkjBEiiGcaClgJFtwocStZvIT.jpg",
+            trailer: "https://youtu.be/jWM0ct-OLsM"
+        },
+        {
+            id: 1084242,
+            title: "Zootopia 2",
+            img: "https://image.tmdb.org/t/p/original/bjUWGw0Ao0qVWxagN3VCwBJHVo6.jpg",
+            lore: "Zootopia is a 2016 animated film produced by Walt Disney Animation Studios about rookie officer Judy Hopps and fox Nick Wilde solving a conspiracy in a city of anthropomorphic animals. Zootopia 2 is the upcoming sequel that reunites the duo for a new mystery while expanding the world of the original film.",
+            header: "https://image.tmdb.org/t/p/original/hi6h3ACrwAswclPEt4VTCeqGfTK.jpg",
+            trailer: "https://youtu.be/BjkIOU5PhyQ"
+        },
+        {
+            id: 1591771,
+            title: "Zootopia 3",
+            img: "https://image.tmdb.org/t/p/original/gramV8L8bzYnd3jHFmf8QKOMW86.jpg",
+            lore: "Coming soon!",
+            header: "https://image.tmdb.org/t/p/original/pwqdccilWJLcQBxX5PNTACP41iK.jpg",
+            trailer: "https://youtu.be/BjkIOU5PhyQ"
+        },
+
+
+       
+
+        
     ];
 
     return (
@@ -114,7 +143,10 @@ function App() {
                         <img
                             src={movie.img}
                             alt={movie.title}
-                            onClick={() => navigate(`/player/${movie.id}`)}
+                            onClick={() => {
+                                navigate(`/player/${movie.id}`);
+                                window.scrollTo(0, 0);
+                            }}
                         />
                     </div>
                 ))}
@@ -127,7 +159,10 @@ function App() {
                         <img
                             src={movie.img}
                             alt={movie.title}
-                            onClick={() => navigate(`/player/${movie.id}`)}
+                            onClick={() => {
+                                navigate(`/player/${movie.id}`);
+                                window.scrollTo(0, 0);
+                            }}
                         />
                     </div>
                 ))}
@@ -139,7 +174,25 @@ function App() {
                         <img
                             src={movie.img}
                             alt={movie.title}
-                            onClick={() => navigate(`/player/${movie.id}`)}
+                            onClick={() => {
+                                navigate(`/player/${movie.id}`);
+                                window.scrollTo(0, 0);
+                            }}
+                        />
+                    </div>
+                ))}
+            </div>
+            <h1 style={{ textAlign: "center", color: "white" }}>Judy Hopps movies</h1>
+            <div className="cards-row">
+                {movies.slice(12, 15).map((movie) => (
+                    <div className="movie-card" key={movie.id}>
+                        <img
+                            src={movie.img}
+                            alt={movie.title}
+                            onClick={() => {
+                                navigate(`/player/${movie.id}`);
+                                window.scrollTo(0, 0);
+                            }}
                         />
                     </div>
                 ))}
