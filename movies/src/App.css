@@ -288,3 +288,88 @@ section {
 .btn-book:active {
   transform: scale(0.98);
 }
+
+
+/*Payment*/
+
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #0e1c26;
+  padding: 40px 20px;
+}
+
+.payment-form {
+  background: linear-gradient(145deg, #1b2d3a, #2a454b);
+  padding: 40px;
+  border-radius: 18px;
+  width: 380px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.payment-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid #294861;
+  background-color: #0e1c26;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.payment-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.payment-form input:focus {
+  outline: none;
+  border-color: #4fd1c5;
+  box-shadow: 0 0 8px #4fd1c5;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.payment-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #294861, #2a454b);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.payment-form button:hover {
+  background: linear-gradient(90deg, #2a454b, #294861);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.payment-form button:active {
+  transform: scale(0.98);
+}
+
+.message {
+  text-align: center;
+  margin-top: 18px;
+  font-weight: 500;
+  font-size: 14px;
+}
