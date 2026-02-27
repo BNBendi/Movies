@@ -134,6 +134,22 @@ function App() {
             header: "https://image.tmdb.org/t/p/original/4vG2j7IgMvoILP71AmefPM8Ts6f.jpg",
             trailer: "https://youtu.be/BjkIOU5PhyQ"
         },
+        {
+            id: 2049,
+            title: "Blade Runner 2049",
+            img: "https://www.themoviedb.org/t/p/w600_and_h900_face/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+            lore:"Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.",
+            header:"https://image.tmdb.org/t/p/original/gNdLJU9TxrpGx4dkZidjys3fyy0.jpg",
+            trailer: "https://youtu.be/haXvp8M9Cog"
+        },
+        {
+            id: 2011,
+            title: "Drive (2011)",
+            img: "https://media.themoviedb.org/t/p/w300_and_h450_face/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
+            lore: "Driver is a skilled Hollywood stuntman who moonlights as a getaway driver for criminals. Though he projects an icy exterior, lately he's been warming up to a pretty neighbor  named Irene and her young son, Benicio. When Irene's husband gets out of jail, he enlists Driver's help in a million-dollar heist. The job goes horribly wrong, and Driver must risk his life to protect Irene and Benicio from the vengeful masterminds behind the robbery.",
+            header: "https://media.themoviedb.org/t/p/w500_and_h282_face/vMG0UBz12zaQC19snnq5vjvAJ8t.jpg",
+            trailer: "https://www.themoviedb.org/video/play?key=9-iG4UJjTM8"
+        }
 
 
         
@@ -195,6 +211,21 @@ function App() {
             <h1 style={{ textAlign: "center", color: "white" }}>Judy Hopps movies</h1>
             <div className="cards-row">
                 {movies.slice(12, 15).map((movie) => (
+                    <div className="movie-card" key={movie.id}>
+                        <img
+                            src={movie.img}
+                            alt={movie.title}
+                            onClick={() => {
+                                navigate(`/player/${movie.id}`);
+                                window.scrollTo(0, 0);
+                            }}
+                        />
+                    </div>
+                ))}
+            </div>
+            <h1 style={{ textAlign: "center", color: "white" }}>Ryan Gosling filmek</h1>
+            <div className="cards-row">
+                {movies.slice(16, 18).map((movie) => (
                     <div className="movie-card" key={movie.id}>
                         <img
                             src={movie.img}
