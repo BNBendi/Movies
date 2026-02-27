@@ -20,7 +20,7 @@ body {
   /* Only top 30% */
   min-height: 250px;
   /* Prevent too small on mobile */
-  background: url("https://image.tmdb.org/t/p/original/kVUfN0ZMuoSAc1FturM7P7PYel6.jpg") no-repeat 50% 30% / cover;
+  
 
   position: relative;
   display: flex;

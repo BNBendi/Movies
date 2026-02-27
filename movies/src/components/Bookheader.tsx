@@ -2,12 +2,12 @@ import React from 'react'
 import { useNavigate } from 'react-router'
 import { useParams } from "react-router-dom";
 import Bookfooter from './Bookfooter'
-import movies from "./data"; 
+import movies from "../data"; 
 
 const Bookheader = () => {
 
     /*const navigate = useNavigate() */
-    
+
     const { id } = useParams();
     const movie = movies.find(m => m.id === Number(id));
 
