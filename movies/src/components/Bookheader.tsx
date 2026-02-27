@@ -148,7 +148,7 @@ const Bookheader = () => {
             id: 2011,
             title: "Drive (2011)",
             img: "https://media.themoviedb.org/t/p/w300_and_h450_face/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
-            lore: "Driver is a skilled Hollywood stuntman who moonlights as a getaway driver for criminals. Though he projects an icy exterior, lately he's been warming up to a pretty neighbor  named Irene and her young son, Benicio. When Irene's husband gets out of jail, he enlists Driver's help in a million-dollar heist. The job goes horribly wrong, and Driver must risk his life to protect Irene and Benicio from the vengeful masterminds behind the robbery.",
+            lore: "When Irene's husband gets out of jail, he enlists Driver's help in a million-dollar heist. The job goes horribly wrong, and Driver must risk his life to protect Irene and Benicio from the vengeful masterminds behind the robbery.",
             header: "https://media.themoviedb.org/t/p/w500_and_h282_face/vMG0UBz12zaQC19snnq5vjvAJ8t.jpg",
             trailer: "https://www.themoviedb.org/video/play?key=9-iG4UJjTM8"
         }
