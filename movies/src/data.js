@@ -143,7 +143,24 @@ const movies = [
         lore: "When Irene's husband gets out of jail, he enlists Driver's help in a million-dollar heist. The job goes horribly wrong, and Driver must risk his life to protect Irene and Benicio from the vengeful masterminds behind the robbery.",
         header: "https://media.themoviedb.org/t/p/w500_and_h282_face/vMG0UBz12zaQC19snnq5vjvAJ8t.jpg",
         trailer: "https://www.themoviedb.org/video/play?key=9-iG4UJjTM8"
+    },
+    {
+        id: 2017,
+        title: "La La Land",
+        img: "https://image.tmdb.org/t/p/original/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+        lore: "La La Land (2016) follows aspiring actress Mia (Emma Stone) and jazz pianist Sebastian (Ryan Gosling) as they fall in love while pursuing their dreams in Los Angeles.",
+        header: "https://image.tmdb.org/t/p/original/pnFOEnr0T1oqdvfvLMRF03gS95l.jpg",
+        trailer: "https://youtu.be/0pdqf4P9MB8"
+    },
+    {
+        id: 20000,
+        title: "The Notebook",
+        img: "https://image.tmdb.org/t/p/original/wbvboxr6xmdSbMEBKzXVWgAwJ1Q.jpg",
+        lore: "The Notebook is a 2004 American romantic drama film directed by Nick Cassavetes, from a screenplay by Jeremy Leven and Jan Sardi, and based on the 1996 novel by Nicholas Sparks.",
+        header: "https://image.tmdb.org/t/p/original/jKGIoP4f6Qgd9zdjduU3iS1fCIP.jpg",
+        trailer: "https://youtu.be/-znC2xjg6XQ"
     }
+
 
 
 

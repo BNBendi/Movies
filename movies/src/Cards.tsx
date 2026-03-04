@@ -69,9 +69,9 @@ function App() {
                     </div>
                 ))}
             </div>
-            <h1 style={{ textAlign: "center", color: "white" }}>Ryan Gosling filmek</h1>
+            <h1 style={{ textAlign: "center", color: "white" }}>Ryan Gosling movies</h1>
             <div className="cards-row">
-                {movies.slice(16, 18).map((movie) => (
+                {movies.slice(16, 20).map((movie) => (
                     <div className="movie-card" key={movie.id}>
                         <img
                             src={movie.img}
