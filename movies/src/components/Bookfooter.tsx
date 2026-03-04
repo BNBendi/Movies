@@ -1,6 +1,10 @@
 import React from 'react'
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom'
+import { useParams } from "react-router-dom";
+
+
+
 
 const Bookfooter = () => {
     const navigate = useNavigate()
@@ -9,12 +13,22 @@ const Bookfooter = () => {
     tomorrow.setDate(tomorrow.getDate() + 1);
     const tomorrow2 = new Date();
     tomorrow2.setDate(tomorrow2.getDate() + 2);
+    const { id } = useParams();
+    const click = (e: React.MouseEvent<HTMLButtonElement>): void => {
+        const time = e.currentTarget.textContent;
+
+        if (time) {
+            localStorage.setItem("date", time);
+        }
+
+        navigate(`/booker/${id}`);
+    };
     return (
-        
+
         <>
             <h3 style={{ textAlign: "center", color: "white", fontSize: "1.5rem", margin: "10px" }}>{today.toDateString()}</h3>
             <section>
-                <button type="button" className='btn-book' onClick={() => navigate("/booker/238")}>2pm</button>
+                <button type="button" className='btn-book' onClick={click}>2pm</button>
                 <button type="button" className='btn-book'>3pm</button>
                 <button type="button" className='btn-book'>4pm</button>
                 <button type="button" className='btn-book'>5pm</button>

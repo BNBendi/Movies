@@ -1,6 +1,7 @@
-import { useState, ChangeEvent, FormEvent } from "react"
-
-
+import { useState, ChangeEvent, FormEvent  } from "react"
+import { useParams } from "react-router-dom";
+import movies from "./data"; 
+import Footer from './components/Footer'
 
 
 interface PaymentFormData {
@@ -41,11 +42,19 @@ function PaymentForm() {
       setMessage("❌ Please fill all fields correctly.")
     }
   }
+  const { id } = useParams();
+    const movie = movies.find(m => m.id === Number(id));
 
+    if (!movie) {
+        return <div style={{ color: "white" }}>Movie not found {id}</div>;
+    }
   return (
     <div className="payment-container">
       <form className="payment-form" onSubmit={handleSubmit}>
         <h2>Payment Details</h2>
+        <h2 style={{textAlign:"center"
+        }}>{movie.title}</h2>
+        <h2>{localStorage.getItem("date")}</h2>
 
         <input
           type="text"
@@ -87,7 +96,9 @@ function PaymentForm() {
 
         {message && <p className="message">{message}</p>}
       </form>
+      
     </div>
+    
   )
 }
 
