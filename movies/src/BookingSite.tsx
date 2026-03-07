@@ -18,6 +18,10 @@ function PaymentForm() {
     expiry: "",
     cvv: ""
   })
+  
+
+
+
 
   const [message, setMessage] = useState<string>("")
 
@@ -93,7 +97,7 @@ function PaymentForm() {
           />
         </div>
 
-        <button type="submit">Pay Now</button>
+        <button onClick={reserveTicket}>Pay Now</button>
 
         {message && <p className="message">{message}</p>}
       </form>
