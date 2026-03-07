@@ -54,6 +54,7 @@ function PaymentForm() {
         <h2>Payment Details</h2>
         <h2 style={{textAlign:"center"
         }}>{movie.title}</h2>
+        <h2>Room 40</h2>
         <h2>{localStorage.getItem("date")}</h2>
 
         <input
