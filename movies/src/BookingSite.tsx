@@ -2,6 +2,7 @@ import { useState, ChangeEvent, FormEvent  } from "react"
 import { useParams } from "react-router-dom";
 import movies from "./data"; 
 import Footer from './components/Footer'
+import { supabase } from "./data/supabase.js";
 
 
 interface PaymentFormData {
@@ -20,37 +21,30 @@ function PaymentForm() {
   })
     
 //DevilMayCry5Dante
-  const [purplerain, setPurplerain] = useState("");
-  const today = new Date().toISOString().split("T")[0];
-  const reserveTicket = async () => {
-    const reservation = {
-      FilmCim: `${movie?.title}`,
-      TeremSzam: 1,
-      Idopont: `${today}`,
-      JegyAr: 2300,
-      FoglaloNeve: `${formData.name}`
-    };
-    
-    try {
-      const response = await fetch("http://localhost:3067/reserve", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(reservation)
-      });
+const [purplerain, setPurplerain] = useState("");
 
-      if (response.ok) {
-        setPurplerain("Reservation successful ✅");
-      } else {
-        setPurplerain("Reservation failed ❌");
-      }
-    } catch (err) {
-      setPurplerain("Server error ❌");
-    }
+const today = new Date().toISOString().split("T")[0];
+
+const reserveTicket = async () => {
+
+  const reservation = {
+    name: formData.name,
+    date: today,
+    price: 2300,
+    movie: movie?.title
   };
 
+  const { error } = await supabase
+    .from("movies")
+    .insert([reservation]);
 
+  if (error) {
+    console.error(error);
+    setPurplerain("Reservation failed ❌");
+  } else {
+    setPurplerain("Reservation successful ✅");
+  }
+};
 
 
   const [message, setMessage] = useState<string>("")
