@@ -77,7 +77,8 @@ const reserveTicket = async () => {
         return <div style={{ color: "white" }}>Movie not found {id}</div>;
     }
   return (
-    <div className="payment-container">
+    <>
+      <div className="payment-container">
       <form className="payment-form" onSubmit={handleSubmit}>
         <h2>Payment Details</h2>
         <h2 style={{textAlign:"center"
@@ -125,9 +126,12 @@ const reserveTicket = async () => {
 
         {message && <p className="message">{message}</p>}
       </form>
-      
+     
+
+     
     </div>
-    
+    <Footer/>
+    </>
   )
 }
 
