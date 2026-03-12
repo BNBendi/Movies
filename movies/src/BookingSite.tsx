@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import movies from "./data"; 
 import Footer from './components/Footer'
 import { supabase } from "./data/supabase.js";
+import { useNavigate } from 'react-router-dom'
 
+const navigate = useNavigate()
 
 interface PaymentFormData {
   name: string
@@ -26,7 +28,7 @@ const [purplerain, setPurplerain] = useState("");
 const today = new Date().toISOString().split("T")[0];
 
 const reserveTicket = async () => {
-
+  
   const reservation = {
     name: formData.name,
     date: today,
@@ -42,7 +44,7 @@ const reserveTicket = async () => {
     console.error(error);
     setPurplerain("Reservation failed ❌");
   } else {
-    setPurplerain("Reservation successful ✅");
+    navigate("/success")
   }
 };
 
