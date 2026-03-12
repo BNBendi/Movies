@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*var url = "https://saspohupcxrgkaxuxyom.supabase.co";
+        var key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNhc3BvaHVwY3hyZ2theHV4eW9tIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI5MDgzNDgsImV4cCI6MjA4ODQ4NDM0OH0.S09f5ScJkwpPDV-7ONl2UtRhOPAo3cM4FxO09x-fePU";*/
+
+
+
+
+
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Collections.Generic;
@@ -166,11 +173,11 @@ class Program
         while (running)
         {
             Console.WriteLine("\n=== MOVIE BOOKING SYSTEM ===");
-            Console.WriteLine("1 - Total Income");
-            Console.WriteLine("2 - Income Per Day");
-            Console.WriteLine("3 - Income Per Movie");
-            Console.WriteLine("4 - Estimated VAT (27%)");
-            Console.WriteLine("0 - Exit");
+            Console.WriteLine("1 - Bevétel");
+            Console.WriteLine("2 - Napi bevétel");
+            Console.WriteLine("3 - Bevétel filmenként");
+            Console.WriteLine("4 - ÁFA értéke");
+            Console.WriteLine("0 - Kilépés");
 
             Console.Write("Choose: ");
             string input = Console.ReadLine();
