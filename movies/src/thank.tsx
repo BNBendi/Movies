@@ -7,7 +7,7 @@ import movies from "./data";
 
 function App() {
   const navigate = useNavigate()
-    
+
   return (
     
     <>

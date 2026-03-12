@@ -18,7 +18,6 @@ function App() {
         <Route path="/" element={<Main />} />
          <Route path="/player/:id" element={<Player />} />
          <Route path="/booker/:id" element={<Booking />} />
-         <Route path="/success" element={<Thanks />} />
       </Routes>
       
       
