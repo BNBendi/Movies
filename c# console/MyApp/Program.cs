@@ -179,7 +179,7 @@ class Program
             Console.WriteLine("4 - ÁFA értéke");
             Console.WriteLine("0 - Kilépés");
 
-            Console.Write("Choose: ");
+            Console.Write("Választás: ");
             string input = Console.ReadLine();
 
             Console.WriteLine();
@@ -187,7 +187,7 @@ class Program
             switch (input)
             {
                 case "1":
-                    Console.WriteLine($"Total Income: {incomeService.GetTotalIncome()} Ft");
+                    Console.WriteLine($"Teljes bevétel: {incomeService.GetTotalIncome()} Ft");
                     break;
 
                 case "2":
@@ -199,7 +199,7 @@ class Program
                     break;
 
                 case "4":
-                    Console.WriteLine($"Estimated VAT: {incomeService.EstimatedVat()} Ft");
+                    Console.WriteLine($"ÁFA értéke: {incomeService.EstimatedVat()} Ft");
                     break;
 
                 case "0":
@@ -207,7 +207,7 @@ class Program
                     break;
 
                 default:
-                    Console.WriteLine("Invalid option");
+                    Console.WriteLine("Hiba");
                     break;
             }
         }
