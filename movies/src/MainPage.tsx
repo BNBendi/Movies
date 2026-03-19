@@ -27,7 +27,7 @@ function App() {
             <h1 className="title">{movies[movieNO].title}</h1>
             <button
               className="watch-btn"
-              onClick={() => navigate("/player/238")}
+              onClick={() => navigate(`/player/${movies[movieNO].id}`)}
             >
               Book Now
             </button>
