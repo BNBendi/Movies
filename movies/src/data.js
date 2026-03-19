@@ -159,8 +159,71 @@ const movies = [
         lore: "The Notebook is a 2004 American romantic drama film directed by Nick Cassavetes, from a screenplay by Jeremy Leven and Jan Sardi, and based on the 1996 novel by Nicholas Sparks.",
         header: "https://image.tmdb.org/t/p/original/jKGIoP4f6Qgd9zdjduU3iS1fCIP.jpg",
         trailer: "https://youtu.be/-znC2xjg6XQ"
-    }
-
+    },
+    {
+        id: 2007,
+        title: "Chainsaw Man - The Movie: Reze Arc",
+        img: "https://www.themoviedb.org/t/p/w600_and_h900_face/pHyxb2RV5wLlboAwm9ZJ9qTVEDw.jpg",
+        lore: "n a brutal war between devils, hunters, and secret enemies, a mysterious girl named Reze has stepped into Denji's world, and he faces his deadliest battle yet, fueled by love in a world where survival knows no rules.",
+        header: "https://image.tmdb.org/t/p/original/zsKkFdy6Kr2hsQh95ceNzGPVZO8.jpg",
+        trailer: "https://youtu.be/gydHt5LdCqc"
+    },
+    {
+        id: 43242,
+        title: "I Want to Eat Your Pancreas",
+        img: "https://www.themoviedb.org/t/p/w600_and_h900_face/qpV8kvRfAntV7D4aOOsLIz7OdPc.jpg",
+        lore: "After his classmate and crush is diagnosed with a pancreatic disease, an average high schooler sets out to make the most of her final days.",
+        header: "https://image.tmdb.org/t/p/original/BNzgGEl0DQiQTPyPcIfcuner1Q.jpg",
+        trailer: "https://www.youtube.com/watch?v=MmoBvmJA9XI"
+    },
+    {
+        id: 43247,
+        title: "The Tunnel to Summer, the Exit of Goodbyes",
+        img: "https://www.themoviedb.org/t/p/w600_and_h900_face/5AGA6pbBKXZTI8k1c6odx30JuQR.jpg",
+        lore: "Urashima Tunnel – Once you enter that tunnel, you can get whatever you want, but at a price. Kaoru Tohno, who seems to have an elusive personality and traumatic past, and Anzu Hanashiro, who is struggling to reconcile her ideal image and true-to-heart attitude, team up to investigate the Urashima Tunnel and get what they want. This is an unforgettable summer story of nostalgia and sprinting in a remote countryside.",
+        header: "https://image.tmdb.org/t/p/original/rWJc5BkI7Op1IYMb3gW6qGjOnIp.jpg",
+        trailer: "https://www.youtube.com/watch?v=EhPu7arYYYo"
+    },
+    {
+        id: 4322,
+        title: "Good Will Hunting ",
+        img: "https://www.themoviedb.org/t/p/w600_and_h900_face/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
+        lore: "Will Hunting is a headstrong, working-class genius who is failing the lessons of life. After one too many run-ins with the law, Will's last chance is a psychology professor, who might be the only man who can reach him.",
+        header: "https://image.tmdb.org/t/p/original/uzM4Rdr7aMQNdT8MqKY5Mic733N.jpg",
+        trailer: "https://www.youtube.com/watch?v=PaZVjZEFkRs"
+    },
+    {
+        id: 5322,
+        title: "Dead Poets Society",
+        img: "https://www.themoviedb.org/t/p/w600_and_h900_face/l5NbiHKUmahlAT3Q1ig8Tyl9xrc.jpg",
+        lore: "At an elite, old-fashioned boarding school in New England, a passionate English teacher inspires his students to rebel against convention and seize the potential of every day, courting the disdain of the stern headmaster.",
+        header: "https://image.tmdb.org/t/p/original/lFIXZpwwlF9hg8NM3RazaIJDuaj.jpg",
+        trailer: "https://www.youtube.com/watch?v=ye4KFyWu2do"
+    },
+    {
+        id: 5323,
+        title: "The Last Samurai ",
+        img: "https://www.themoviedb.org/t/p/w600_and_h900_face/a8jmJPs5eZBARmnuEEvZwbjwyz4.jpg",
+        lore: "Nathan Algren is an American hired to instruct the Japanese army in the ways of modern warfare, which finds him learning to respect the samurai and the honorable principles that rule them. Pressed to destroy the samurai's way of life in the name of modernization and open trade, Algren decides to become an ultimate warrior himself and to fight for their right to exist.",
+        header: "https://media.themoviedb.org/t/p/w500_and_h282_face/g7vyM5fJSGXUyeP6EZEtfBwC5Xa.jpg",
+        trailer: "https://www.youtube.com/watch?v=T50_qHEOahQ"
+    },
+    {
+        id: 5325,
+        title: "Interstellar ",
+        img: "https://www.themoviedb.org/t/p/w600_and_h900_face/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+        lore: "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+        header: "https://media.themoviedb.org/t/p/w500_and_h282_face/vgnoBSVzWAV9sNQUORaDGvDp7wx.jpg",
+        trailer: "https://www.youtube.com/watch?v=zSWdZVtXT7E"
+    },
+    {
+        id: 5328,
+        title: "The Good, the Bad and the Ugly",
+        img: "https://www.themoviedb.org/t/p/w600_and_h900_face/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
+        lore: "While the Civil War rages on between the Union and the Confederacy, three men – a quiet loner, a ruthless hitman, and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold",
+        header: "https://media.themoviedb.org/t/p/w500_and_h282_face/eoCSp75lxatmIa6aGqfnzwtbttd.jpg",
+        trailer: "https://www.youtube.com/watch?v=IFNUGzCOQoI"
+    },
 
 
 

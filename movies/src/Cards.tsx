@@ -84,6 +84,35 @@ function App() {
                     </div>
                 ))}
             </div>
+            <h1 style={{ textAlign: "center", color: "white" }}>Editors recommendation</h1>
+            <div className="cards-row">
+                {movies.slice(20, 24).map((movie) => (
+                    <div className="movie-card" key={movie.id}>
+                        <img
+                            src={movie.img}
+                            alt={movie.title}
+                            onClick={() => {
+                                navigate(`/player/${movie.id}`);
+                                window.scrollTo(0, 0);
+                            }}
+                        />
+                    </div>
+                ))}
+            </div>
+            <div className="cards-row">
+                {movies.slice(24, 28).map((movie) => (
+                    <div className="movie-card" key={movie.id}>
+                        <img
+                            src={movie.img}
+                            alt={movie.title}
+                            onClick={() => {
+                                navigate(`/player/${movie.id}`);
+                                window.scrollTo(0, 0);
+                            }}
+                        />
+                    </div>
+                ))}
+            </div>
         </>
     );
 }
