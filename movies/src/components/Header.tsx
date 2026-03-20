@@ -1,4 +1,4 @@
-    import "../App.css";
+
 
     export default function Header() {
     return (
@@ -10,7 +10,7 @@
 
             <nav className="nav">
             <a href="/">Home</a>
-            <a href="/player">Movies</a>
+            <a href="/Movies">Movies</a>
             <a href="#">TV Shows</a>
             </nav>
 

@@ -7,7 +7,6 @@ function App() {
 
     return (
         <>
-            <h1 style={{ textAlign: "center", color: "white" }}>Red movies</h1>
 
             <div className="cards-row">
                 {movies.slice(0, 4).map((movie) => (
@@ -23,7 +22,6 @@ function App() {
                     </div>
                 ))}
             </div>
-            <h1 style={{ textAlign: "center", color: "white" }}>Yellow movies</h1>
 
             <div className="cards-row">
                 {movies.slice(4, 8).map((movie) => (
@@ -39,7 +37,6 @@ function App() {
                     </div>
                 ))}
             </div>
-            <h1 style={{ textAlign: "center", color: "white" }}>Motorsport movies</h1>
             <div className="cards-row">
                 {movies.slice(8, 12).map((movie) => (
                     <div className="movie-card" key={movie.id}>
@@ -54,9 +51,8 @@ function App() {
                     </div>
                 ))}
             </div>
-            <h1 style={{ textAlign: "center", color: "white" }}>Judy Hopps movies</h1>
             <div className="cards-row">
-                {movies.slice(12, 15).map((movie) => (
+                {movies.slice(12, 16).map((movie) => (
                     <div className="movie-card" key={movie.id}>
                         <img
                             src={movie.img}
@@ -69,7 +65,6 @@ function App() {
                     </div>
                 ))}
             </div>
-            <h1 style={{ textAlign: "center", color: "white" }}>Ryan Gosling movies</h1>
             <div className="cards-row">
                 {movies.slice(16, 20).map((movie) => (
                     <div className="movie-card" key={movie.id}>
@@ -84,7 +79,6 @@ function App() {
                     </div>
                 ))}
             </div>
-            <h1 style={{ textAlign: "center", color: "white" }}>Editors recommendation</h1>
             <div className="cards-row">
                 {movies.slice(20, 24).map((movie) => (
                     <div className="movie-card" key={movie.id}>

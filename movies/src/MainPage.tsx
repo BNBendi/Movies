@@ -1,10 +1,9 @@
-import './App.css'
 import { useNavigate } from 'react-router-dom'
 import Cards from "./Cards"
 import Footer from "./components/Footer"
 import movies from "./data";
 
-function randomMovie(max) {
+function randomMovie(max: number) {
   return Math.floor(Math.random() * max);
 }
 
