@@ -180,7 +180,7 @@ const movies = [
         id: 43247,
         title: "The Tunnel to Summer, the Exit of Goodbyes",
         img: "https://www.themoviedb.org/t/p/w600_and_h900_face/5AGA6pbBKXZTI8k1c6odx30JuQR.jpg",
-        lore: "Urashima Tunnel – Once you enter that tunnel, you can get whatever you want, but at a price. Kaoru Tohno, who seems to have an elusive personality and traumatic past, and Anzu Hanashiro, who is struggling to reconcile her ideal image and true-to-heart attitude, team up to investigate the Urashima Tunnel and get what they want. This is an unforgettable summer story of nostalgia and sprinting in a remote countryside.",
+        lore: "Urashima Tunnel – Once you enter that tunnel, you can get whatever you want, but at a price...",
         header: "https://image.tmdb.org/t/p/original/rWJc5BkI7Op1IYMb3gW6qGjOnIp.jpg",
         trailer: "https://www.youtube.com/watch?v=EhPu7arYYYo"
     },
@@ -204,7 +204,7 @@ const movies = [
         id: 5323,
         title: "The Last Samurai ",
         img: "https://www.themoviedb.org/t/p/w600_and_h900_face/a8jmJPs5eZBARmnuEEvZwbjwyz4.jpg",
-        lore: "Nathan Algren is an American hired to instruct the Japanese army in the ways of modern warfare, which finds him learning to respect the samurai and the honorable principles that rule them. Pressed to destroy the samurai's way of life in the name of modernization and open trade, Algren decides to become an ultimate warrior himself and to fight for their right to exist.",
+        lore: "Nathan Algren is an American hired to instruct the Japanese army in the ways of modern warfare, which finds him learning to respect the samurai and the honorable principles that rule them...",
         header: "https://media.themoviedb.org/t/p/w500_and_h282_face/g7vyM5fJSGXUyeP6EZEtfBwC5Xa.jpg",
         trailer: "https://www.youtube.com/watch?v=T50_qHEOahQ"
     },

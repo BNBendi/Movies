@@ -7,7 +7,8 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Thanks from "./thank"
 import Movies from "./Movies"
-
+import Sign_up from "./Sign_up"
+import Login from "./Login"
 
 
 
@@ -21,6 +22,8 @@ function App() {
          <Route path="/player/:id" element={<Player />} />
          <Route path="/booker/:id" element={<Booking />} />
          <Route path="/movies" element={<Movies />} />
+         <Route path="/signup/:id" element={<Sign_up />} />
+         <Route path="/login/:id" element={<Login />} />
       </Routes>
       
       
