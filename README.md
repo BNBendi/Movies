@@ -42,9 +42,11 @@ sudo apt install nodejs npm
 
 ### 🚀 Projekt indítása
 (Visual Studio Codeban)
+### View -> Command Palette:
 ```bash
 git clone https://github.com/your-username/movies-app.git
 ```
+### Terminal:
 ```bash
 cd movies
 ```
@@ -54,7 +56,7 @@ npm install
 ```bash
 npm install
 ```
-####Megnyitás:
+#### Megnyitás:
 http://localhost:5173
 
 
