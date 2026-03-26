@@ -33,14 +33,14 @@ npm -v
 ```bash
 brew install node
 ```
-###🐧 Linux (Ubuntu/Debian)
+### 🐧 Linux (Ubuntu/Debian)
 ```bash
 sudo apt update
 sudo apt install nodejs npm
 ```
 ***
 
-###🚀 Projekt indítása
+### 🚀 Projekt indítása
 (Visual Studio Codeban)
 ```bash
 git clone https://github.com/your-username/movies-app.git
