@@ -1,4 +1,4 @@
-# 💻 Webes felülezt működése: 
+# 💻 Webes felület működése: 
 
 ## ⚙️ Követelmények
 
