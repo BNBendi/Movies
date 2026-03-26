@@ -1,6 +1,6 @@
 ## ⚙️ Követelmények
 
-A projekt futtatásához szükséged van:
+A projekt futtatásához szükséges:
 
 - Node.js  
 - npm *(a Node része)*  
@@ -11,11 +11,23 @@ A projekt futtatásához szükséged van:
 
 ### 🪟 Windows
 
-1. Menj ide: https://nodejs.org  
-2. Töltsd le az **LTS verziót**  
-3. Telepítsd (`.msi` fájl)  
+1. Menjen ide: https://nodejs.org  
+2. Töltse le az **LTS verziót**  
+3. Telepítse (`.msi` fájl)  
 
-**Ellenőrzés:**
+**Ellenőrzés: (Terminálban)**
 ```bash
 node -v
 npm -v
+
+
+### 🍎 macOS
+
+**Egyszerű módszer:**
+
+- Letöltés: https://nodejs.org  
+
+**Homebrew:**
+
+```bash
+brew install node
