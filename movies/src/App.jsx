@@ -9,6 +9,7 @@ import Thanks from "./thank"
 import Movies from "./Movies"
 import Sign_up from "./Sign_up"
 import Login from "./Login"
+import Profile from "./Profile"
 
 
 
@@ -24,6 +25,7 @@ function App() {
          <Route path="/movies" element={<Movies />} />
          <Route path="/signup/:id" element={<Sign_up />} />
          <Route path="/login/:id" element={<Login />} />
+         <Route path="/profile" element={<Profile />} />
       </Routes>
       
       
