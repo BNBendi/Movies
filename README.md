@@ -54,7 +54,7 @@ cd movies
 npm install
 ```
 ```bash
-npm install
+npm run dev
 ```
 #### Megnyitás:
 http://localhost:5173
