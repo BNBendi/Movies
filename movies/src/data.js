@@ -196,7 +196,7 @@ const movies = [
         id: 5322,
         title: "Dead Poets Society",
         img: "https://www.themoviedb.org/t/p/w600_and_h900_face/l5NbiHKUmahlAT3Q1ig8Tyl9xrc.jpg",
-        lore: "At an elite, old-fashioned boarding school in New England, a passionate English teacher inspires his students to rebel against convention and seize the potential of every day, courting the disdain of the stern headmaster.",
+        lore: "Oh Captain my Captain",
         header: "https://image.tmdb.org/t/p/original/lFIXZpwwlF9hg8NM3RazaIJDuaj.jpg",
         trailer: "https://www.youtube.com/watch?v=ye4KFyWu2do"
     },

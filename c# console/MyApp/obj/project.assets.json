@@ -634,11 +634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\Csomor\\Lock In B I\\Movies\\c# console\\MyApp\\MyApp.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\Csomor\\proj\\Movies\\c# console\\MyApp\\MyApp.csproj",
       "projectName": "MyApp",
-      "projectPath": "C:\\Users\\User\\Documents\\Csomor\\Lock In B I\\Movies\\c# console\\MyApp\\MyApp.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\Csomor\\proj\\Movies\\c# console\\MyApp\\MyApp.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\Csomor\\Lock In B I\\Movies\\c# console\\MyApp\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\Csomor\\proj\\Movies\\c# console\\MyApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -24,34 +24,45 @@ export default function Login() {
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (formData.email.trim() === "" || formData.password.trim() === "") {
-      setMessage("❌ Fill all fields");
-      return;
-    }
+  // 🔒 Prevent login if already logged in
+  const existingUser = localStorage.getItem("user");
+  if (existingUser) {
+    setMessage("⚠️ Already logged in");
+    return;
+  }
 
-    setLoading(true);
+  // ✅ Validation
+  if (formData.email.trim() === "" || formData.password.trim() === "") {
+    setMessage("❌ Fill all fields");
+    return;
+  }
 
-    const { data, error } = await supabase
-      .from("users")
-      .select("*")
-      .eq("email", formData.email)
-      .eq("password", formData.password)
-      .single();
+  setLoading(true);
 
-    if (error || !data) {
-      console.error(error);
-      setMessage("❌ Invalid email or password");
-    } else {
-      setMessage("✅ Login successful");
+  const { data, error } = await supabase
+    .from("users")
+    .select("*")
+    .eq("email", formData.email)
+    .eq("password", formData.password)
+    .single();
 
-      // opcionális: mentés
-      localStorage.setItem("user", JSON.stringify(data));
-    }
+  if (error || !data) {
+    console.error(error);
+    setMessage("❌ Invalid email or password");
+  } else {
+    // ✅ Save user
+    localStorage.setItem("user", JSON.stringify(data));
 
-    setLoading(false);
-  };
+    setMessage("✅ Login successful");
+
+    // 🚀 Redirect after login
+    window.location.href = "/"; // or "/profile"
+  }
+
+  setLoading(false);
+};
 
   return (
     <>

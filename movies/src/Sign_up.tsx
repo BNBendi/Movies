@@ -26,37 +26,48 @@ export default function Sign_up() {
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (
-      formData.name.trim() === "" ||
-      formData.email.trim() === "" ||
-      formData.password.length < 6
-    ) {
-      setMessage("❌ Fill all fields correctly (password min 6 chars)");
-      return;
-    }
+  // 🔒 Check if already logged in
+  const existingUser = localStorage.getItem("user");
+  if (existingUser) {
+    setMessage("⚠️ A user is already logged in");
+    return;
+  }
 
-    setLoading(true);
+  // ✅ Validation
+  if (
+    formData.name.trim() === "" ||
+    formData.email.trim() === "" ||
+    formData.password.length < 6
+  ) {
+    setMessage("❌ Fill all fields correctly (password min 6 chars)");
+    return;
+  }
 
-    const { error } = await supabase.from("users").insert([
-      {
-        name: formData.name,
-        email: formData.email,
-        password: formData.password,
-      },
-    ]);
+  setLoading(true);
 
-    if (error) {
-      console.error(error);
-      setMessage("❌ Registration failed");
-    } else {
-      setMessage("✅ Registration successful");
-      setFormData({ name: "", email: "", password: "" });
-    }
+  const { error } = await supabase.from("users").insert([
+    {
+      name: formData.name,
+      email: formData.email,
+      password: formData.password,
+    },
+  ]);
 
-    setLoading(false);
-  };
+  if (error) {
+    console.error(error);
+    setMessage("❌ Registration failed");
+  } else {
+    // ✅ Save logged-in user
+    localStorage.setItem("user", JSON.stringify(formData));
+
+    setMessage("✅ Registration successful");
+    setFormData({ name: "", email: "", password: "" });
+  }
+
+  setLoading(false);
+};
 
   return (
     <>
