@@ -1,3 +1,5 @@
+# 💻 Webes felülezt működése: 
+
 ## ⚙️ Követelmények
 
 A projekt futtatásához szükséges:
