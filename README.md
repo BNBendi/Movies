@@ -64,3 +64,7 @@ http://localhost:5173
 
 
 
+# Videóban szereplő zene:
+https://youtu.be/LpNVf8sczqU?list=RDLpNVf8sczqU
+
+
